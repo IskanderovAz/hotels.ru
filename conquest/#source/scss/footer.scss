@@ -1,0 +1,70 @@
+@import './calc.scss';
+
+.footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+  height: 275px;
+  background: var(--color--charcoal);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.logo-container--white {
+  margin-bottom: 22.98px;
+}
+
+.contacts {
+  font-size: rem(12);
+  line-height: rem(14);
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.userful-links {
+  width: fit-content;
+  &__title {
+    font-weight: 700;
+    line-height: rem(16);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+  }
+  &__list {
+    font-size: rem(12);
+    line-height: rem(14);
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content-width: 95%;
+  }
+
+  .footer {
+    height: auto;
+    &__container {
+      justify-content: flex-start;
+      padding: 15px 0;
+    }
+  }
+
+  .userful-links {
+    &__container {
+      display: none;
+    }
+  }
+}

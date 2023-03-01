@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS переменные */
+:root {
+  --content-width: calc((1162 / 1366) * 100%);
+  --font-1: "Roboto";
+  --font-2: "Playfair Display";
+  --font-3: "Prata";
+  --main-fz: 14px; /* При изменении значения, стоит поменять соответственно в калькуляторе: calc.scss */
+  --main-fc: #333;
+  --color--charcoal: #444240;
+  --color--sandy-brown: #D4B098;
+  --main-bg-color: #FFF;
+  --bg-color-1: #FDFDFB;
+  --bg-color-2: #E5E5E5;
+}
+
+/*************************************************/
+html {
+  font-family: var(--font-1);
+  font-size: var(--main-fz);
+  font-weight: 400;
+  background-color: var(--main-bg-color);
+}

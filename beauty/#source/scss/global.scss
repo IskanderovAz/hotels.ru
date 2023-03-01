@@ -1,0 +1,25 @@
+/* CSS переменные */
+:root {
+  --default-font-size: 14px; /* При изменении значения, стоит поменять соответственно в калькуляторе: calc.scss */
+  --main-background-color: #EFEFEF;
+  --color1: #fff;
+  --color2: #66C05D;
+  --main-font-color: #333;
+  --content-width: calc((1110 / 1920) * 100%);
+}
+/*************************************************/
+html {
+  font-family: 'Roboto';
+  font-size: var(--default-font-size);
+  font-weight: 400;
+}
+
+a {
+  color: var(--main-font-color);
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--color2);
+  }
+}
+
